@@ -1,0 +1,29 @@
+public class garage
+{
+    static void park(Car car)
+    {
+        System.out.println("The " + car.name + " is parked in the garage.");
+    }
+}
+
+class Car
+{
+    String name;
+    
+    Car(String name)
+    {
+        this.name = name; 
+    }
+}
+
+class Carpark
+{
+    public static void main(String[] args)
+    {
+        Car car1 = new Car("Tesla");
+        Car car2 = new Car("Aston Martin");
+
+        Garage.park(car1);
+        Garage.park(car2);
+    }
+}
