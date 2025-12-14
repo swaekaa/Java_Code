@@ -1,0 +1,116 @@
+william fiset -> dsa youtube
+
+
+JAVA COURSE
+
+to show input/output terminal, take input/output from a user without using Scanner
+but instead a terminal:
+
+// library of the class
+import javax.swing.JOptionPane;
+
+public class tring
+{
+    public static void main(String args[])
+    {
+        //JOption.showInputDialog();
+        String name = JOptionPane.showInputDialog("entrt ur name");
+        // for output
+        //JOption.showMessageDialog();
+        JOptionPane.showMessageDialog(null."hello "+name);
+
+        // initializing and declaring datatype
+        // used for any data type accordingly
+        int age=Integer.pareInt(JOptionPane.showInputDialog("enter ut age"));
+        JOptionPane.showMessageDialog(null,"you are "+age+" years ols");
+    }
+}
+
+
+
+toString() = special method that all objects inherit
+             that returns a String that can "textually represent" an object
+             can be used both implicitly or explicitly
+             // to return all of the attributes of the object
+
+
+ARRAY OF OBJECTS:
+
+public class food
+{
+    String name;
+
+    food(String name)
+    {
+        this.name=name;
+    }
+
+    public static void main(String args[])
+    {
+        food[] rf = new food[3];
+
+        food food1 = new food("pizza");
+        food food2 = new food("cereal");
+        food food3 = new food("burger");
+
+        rf[0]=food1;
+        rf[1]=food2;
+        rf[3]=food3;
+
+        System.out.println(rf[0]);
+        // this gives the addres of the first element of the array
+
+        System.out.prnitln(rf[0].name);
+        // this gives the element in the first index -> pizza
+
+        System.out.prnitln(rf[1].name);
+        System.out.prnitln(rf[2].name);
+
+    }
+}
+
+
+3:38
+
+
+PASSING OBJECTS AS ARGUMENTS:
+
+public class garage
+{
+    void park(car car)
+    {
+        System.out.println("the "+car.name+" is parked in the garage");
+    }
+}
+public class car
+{
+    String name;
+    car(String name)
+    {
+        this.name=name; 
+    }
+}
+public class carpark
+{
+    public static void main(String args[])
+    {
+        garage g = new garage();
+        car car1 = new car("tesla");
+        car car2 = new car("aston");
+
+        
+
+        garage.park(car1);
+        garage.park(car2);
+    }
+}
+
+
+static = modifier. a single copy of a variable/method is created
+         and shared
+         the class "owns" the static member
+
+
+
+
+
