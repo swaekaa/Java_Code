@@ -1,0 +1,6 @@
+jdk*/
+*.class
+*.swp
+.vscode/
+bin/
+dist/
